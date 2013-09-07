@@ -1,0 +1,179 @@
+\documentclass[projetofinal,brazil]{ThesisPUC}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\Rset}{\mathbb{R}}
+\newcommand{\Zset}{\mathbb{Z}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\autor{Breno Calazans}
+\autorR{Calazans, Breno}
+\orientador{Gustavo Robichez de Carvalho}
+\orientadorR{Carvalho, Gustavo Robichez de}
+\titulo{Nome do seu projeto final}
+\subtitulo{Subt\'{i}tulo (opcional)}
+\dia{07} \mes{Setembro} \ano{2014}
+
+\cidade{Rio de Janeiro}
+\CDD{510}
+\departamento{Inform\'atica}
+\programa{Sistemas de Informa\c{c}\~{o}es}
+\centro{Centro T\'{e}cnico Cient\'{i}fico}
+\universidade{Pontif\'{i}cia Universidade Cat\'{o}lica do Rio de Janeiro}
+\uni{PUC--Rio}
+\course{Sistemas de Informa\c{c}\~ao}
+\diploma{Bacharel em Sistemas de Informa\c{c}\~ao}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Não precisa preencher se for um Projeto Final %
+%
+\banca{
+  \membrodabanca{Luis Carlos Pacheco R. Velho}{IMPA}
+  \membrodabanca{Jorge Stolfi}{UNICAMP}
+  \coordenador{Ney Augusto Dumont}
+}
+%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Não precisa preencher se for um Projeto Final %
+%
+\curriculo{%
+Graduou--se em Engenharia na Ecole Polytechnique (Paris, Fran\c{c}a), cursando \'{A}lgebra e Inform\'{a}tica, assim como F\'{i}sica Te\'{o}rica. Especializou--se na Ecole Sup\'{e}rieure des T\'{e}l\'{e}communications (Paris, Fran\c{c}a) em Processamento de Sinais de Voz e Imagens, assim como Organiza\c{c}\~{a}o e Planejamento. Trabalhou junto com a empresa Inventel em sistemas de telecomunica\c{c}\~{o}es sem fil baseados na tecnologia BlueTooth. Desenvolveu junto com os seus orientadores durante o Mestrado ferramentas de topologia computacional.}%
+%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\epigrafe{%
+C'est seulement apr\`{e}s de nombreuses ann\'{e}es d'un travail patient, d'une
+r\'{e}flexion intense, d'essais nombreux et prudents o\`{u} je d\'{e}veloppais
+toujours plus la capacit\'{e} de vivre purement, abstraitement les formes
+picturales et de m'absorber toujours plus pro\-fon\-d\'{e}\-ment dans ces
+profondeurs insondables, que j'arrivais \`{a} ces formes picturales avec
+lesquelles je travaille aujourd'hui et qui, comme je l'esp\`{e}re et le veux,
+se d\'{e}velopperont bien plus encore.
+}
+\epigrafeautor{Wassily Kandinsky}
+\epigrafelivro{Regards sur le pass\'{e}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\agradecimentos{%
+Aos meus orientadores Professores H\'{e}lio Lopes e Geovan Tavares pelo apoio, simpatia de sempre, e incentivo para a realiza\c{c}\~{a}o deste trabalho
+
+Ao CNPq e \`{a} PUC--Rio, pelos aux\'{i}lios concedidos, sem os quais este trabalho n\~{a}o poderia ter sido realizado.
+
+\`{A}s minhas av\'{o}s, que sofreram o mais pela saudade devida a minha expatria\c{c}\~{a}o. Aos meus pais, irm\~{a}s e fam\'{i}lia.
+
+Aos meus colegas da PUC--Rio, quem me fizeram adorar esse lugar.
+
+Aos professores Marcos da Silvera, Jean--Marie Nicolas e Anne Germa que me ofereceram a oportunidade desta coopera\c{c}\~{a}o.
+
+Ao pessoal do departamento de Matem\'{a}tica para a ajuda de todos os dias, em particular \`{a} Ana Cristina, Creuza e ao Sinesio.
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chaves{%
+  \chave{Teoria de Morse}%
+  \chave{Teoria de Forman}%
+  \chave{Topologia Computacional}%
+  \chave{Geometria Computacional}%
+  \chave{Modelagem Geom\'{e}trica}%
+  \chave{Matem\'{a}tica Discreta}%
+}
+
+\resumo{
+A teoria de Morse \'{e} considerada uma ferramenta matem\'{a}tica importante em aplica\c{c}\~{o}es nas \'{a}reas de topologia computacional, computa\c{c}\~{a}o gr\'{a}fica e modelagem geom\'{e}trica. Ela foi inicialmente formulada para variedades diferenci\'{a}veis. Recentemente, Robin Forman desenvolveu uma vers\~{a}o dessa teoria para estruturas discretas, tais como complexos celulares. E isso permitiu que ela pudesse ser aplicada a outros tipos interessantes de objetos, em particular para malhas.
+
+Uma vez que uma fun\c{c}\~{a}o de Morse \'{e} definida em uma variedade, informa\c{c}\~{o}es sobre sua topologia podem ser deduzidas atrav\'{e}s de seus elementos cr\'{i}ticos. O objetivo desse trabalho \'{e} apresentar um algoritmo para definir uma fun\c{c}\~{a}o de Morse discreta \'{o}tima para um complexo celular, onde obter o \'{o}timo significa construir uma fun\c{c}\~{a}o que possui o menor n\'{u}mero poss\'{i}vel de elementos cr\'{i}ticos. Aqui foi provado que esse problema \'{e} MAX--SNP dif\'{i}cil. Entretanto, tamb\'{e}m ser\'{a} proposto um algoritmo linear que, para o caso de variedades de dimens\~{a}o 2, \'{e} sempre \'{o}timo.
+
+Tamb\'{e}m foram provados v\'{a}rios resultados sobre a pr\'{o}pria estrutura das fun\c{c}\~{o}es de Morse discretas. Em particular, uma representa\c{c}\~{a}o equivalente por hiperflorestas \'{e} apresentada. E atrav\'{e}s dessa representa\c{c}\~{a}o, foi desenvolvido um algoritmo para constru\c{c}\~{a}o de fun\c{c}\~{o}es de Morse discretas em complexos celulares com dimens\~{a}o arbitr\'{a}ria. Esse algoritmo \'{e} quadr\'{a}tico no tempo e, apesar de n\~{a}o se poder garantir o resultado \'{o}timo, d\'{a} respostas \'{o}timas na maioria dos casos pr\'{a}ticos.
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chavesuk{
+  \chave{Morse Theory}%
+  \chave{Forman Theory}%
+  \chave{Computational Topology}%
+  \chave{Computational Geometry}%
+  \chave{Solid Modeling}%
+  \chave{Discrete Mathematics}%
+}
+
+\titulouk{Constructing discrete Morse functions}
+
+\resumouk{%
+Morse theory has been considered a powerful tool in its applications to computational topology, computer graphics and geometric modeling. It was originally formulated for smooth manifolds. Recently, Robin Forman formulated a version of this theory for discrete structures such as cell complexes. It opens up several categories of interesting objects (particularly meshes) to applications of Morse theory.
+
+Once a Morse function has been defined on a manifold, then information about its topology can be deduced from its critical elements. The purpose of this work is to design an algorithm to define optimal discrete Morse functions on general cell complex, where optimality entails having the least number of critical elements. This problem is proven here to be MAX--SNP hard. However, we provide a linear algorithm that, for the case of 2--manifolds, always reaches optimality.
+
+Moreover, we proved various results on the structure of a discrete Morse function. In particular, we provide an equivalent representation by hyperforests. From this point of view, we designed a construction of discrete Morse functions for general cell complexes of arbitrary finite dimension. The resulting algorithm is quadratic in time and, although not guaranteed to be optimal, gives optimal answers in most of the practical cases.
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\modotabelas{figtab} % nada, fig, tab ou figtab
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\epigrafe{%
+Un ab\^{i}me effrayant, une profusion de questions de toutes sortes o\`{u} ma responsabilit\'{e} \'{e}tait en jeu se pr\'{e}sentaient \`{a} moi. Et la plus importante: qu'est--ce qui doit remplacer l'objet manquant? Le danger d'un art ornemental m'apparaissait clairement, la morte existence illusoire des formes stylis\'{e}es ne pouvait que me rebuter.
+
+C'est seulement apr\`{e}s de nombreuses ann\'{e}es d'un travail patient, d'une r\'{e}flexion intense, d'essais nombreux et prudents o\`{u} je d\'{e}veloppais toujours plus la capacit\'{e} de vivre purement, abstraitement les formes picturales et de m'absorber toujours plus pro\-fon\-d\'{e}\-ment dans ces profondeurs insondables, que j'arrivais \`{a} ces formes picturales avec lesquelles je travaille aujourd'hui et qui, comme je l'esp\`{e}re et le veux, se d\'{e}velopperont bien plus encore.
+
+Il a fallu beaucoup de temps avant que cette question: `qu'est ce qui doit remplacer l'objet ?' trouve en moi une v\'{e}ritable r\'{e}ponse. Souvent je me retourne vers mon pass\'{e} et je suis desesp\'{e}r\'{e} de voir combien de temps il m'a fallu pour arriver \`{a} cette solution.
+}
+\epigrafeautor{Wassily Kandinsky}
+\epigrafelivro{Regards sur le pass\'{e}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\chapter{Conclus\~{a}o e trabalhos futuros}
+
+Este trabalho foi focado na teoria discreta de Morse de Forman. Analisamos os elementos b\'{a}sicos desta teoria, e provamos a estrutura em camadas das fun\c{c}\~{o}es de Morse discretas. Representamos esta estrutura de camadas por uma cole\c{c}\~{a}o de hiperflorestas e demos uma caracteriza\c{c}\~{a}o completa das c\'{e}lulas cr\'{i}ticas em termos de componentes regulares das hiperflorestas. Usamos esta an\'{a}lise para introduzir um esquema para construir fun\c{c}\~{o}es de Morse discretas em complexos celulares finitos de dimens\~{a}o arbitr\'{a}ria. Esta constru\c{c}\~{a}o \'{e} quadr\'{a}tica no tempo no pior caso, e foi provada que ela \'{e} linear e \'{o}tima no caso das variedades de dimens\~{a}o 2. Os resultados experimentais mostraram que o algoritmo deu um resultado \'{o}timo na maioria dos casos. Isto abriu uma nova pergunta: quais s\~{a}o as condi\c{c}\~{o}es sobre um complexo celular que asseguram que o algoritmo fornece uma fun\c{c}\~{a}o \'{o}tima.
+
+% \begin{figure}
+%   \includegraphics*[width=\linewidth]{ctor4_none.eps}
+%   \caption{Uma figura}
+% \end{figure}
+
+Uma aplica\c{c}\~{a}o importante deste trabalho em computa\c{c}\~{a}o gr\'{a}fica estaria no campo da compress\~{a}o geom\'{e}trica. O algoritmo Grow\&Fold de A. Szymczak e J. Rossignac \cite{Szy00} poderia ser justificado e melhorado por nosso algoritmo com o objetivo de minimizar o n\'{u}mero de ``glue faces'' a fim conseguir uma compress\~{a}o mais eficiente. Esta proposta foi feita de maneira \'{o}tima para o caso de compress\~{a}o de superf\'{i}cies com al\c{c}as em \cite{Lop02}.
+
+Planejamos continuar este trabalho em tr\^{e}s dire\c{c}\~{o}es. Primeiramente, como mencionado acima, aplicar a teoria de Forman e a an\'{a}lise de nosso algoritmo para a compress\~{a}o de malhas volum\'{e}tricas em $\Rset^{n}, n \geq 3$. Tentaremos tamb\'{e}m aplicar a teoria de Morse discreta para resolver as singularidades que aparecem nas reconstru\c{c}\~{o}es de modelos. Finalmente, esperamos produzir um morphing topologicamente consistente utilizando o campo gradiente discreto de dois objetos com o mesmo tipo de homotopia.
+
+
+\arial
+\bibliography{Exple}
+
+\normalfont
+%\begin{thenotations}
+% %------------------------------------------------------------------------------%
+% \section*{Simplicial Complex}
+% %------------------------------------------------------------------------------%
+% %
+% \noindent
+% \begin{tabular}{ll}
+% \mathbb{R} & conjunto dos n\'{u}meros reais \\
+% \end{tabular}
+%
+%\end{thenotations}
+%\printindex
+
+\appendix
+
+\chapter{Primeiro Ap\^{e}ndice}
+O primeiro ap\^{e}ndice deve vir ap\'{o}s as refer\^{e}ncias bibliogr\'{a}ficas. Depois que voc\^{e} colocar a diretiva ``{$\backslash$}apendix'', todos os ``{$\backslash$}chapter\{\}'' v\~{a}o gerar ap\^{e}ndices.
+
+\end{document}
