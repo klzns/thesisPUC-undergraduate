@@ -125,34 +125,15 @@ Moreover, we proved various results on the structure of a discrete Morse functio
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\epigrafe{%
-Un ab\^{i}me effrayant, une profusion de questions de toutes sortes o\`{u} ma responsabilit\'{e} \'{e}tait en jeu se pr\'{e}sentaient \`{a} moi. Et la plus importante: qu'est--ce qui doit remplacer l'objet manquant? Le danger d'un art ornemental m'apparaissait clairement, la morte existence illusoire des formes stylis\'{e}es ne pouvait que me rebuter.
-
-C'est seulement apr\`{e}s de nombreuses ann\'{e}es d'un travail patient, d'une r\'{e}flexion intense, d'essais nombreux et prudents o\`{u} je d\'{e}veloppais toujours plus la capacit\'{e} de vivre purement, abstraitement les formes picturales et de m'absorber toujours plus pro\-fon\-d\'{e}\-ment dans ces profondeurs insondables, que j'arrivais \`{a} ces formes picturales avec lesquelles je travaille aujourd'hui et qui, comme je l'esp\`{e}re et le veux, se d\'{e}velopperont bien plus encore.
-
-Il a fallu beaucoup de temps avant que cette question: `qu'est ce qui doit remplacer l'objet ?' trouve en moi une v\'{e}ritable r\'{e}ponse. Souvent je me retourne vers mon pass\'{e} et je suis desesp\'{e}r\'{e} de voir combien de temps il m'a fallu pour arriver \`{a} cette solution.
-}
-\epigrafeautor{Wassily Kandinsky}
-\epigrafelivro{Regards sur le pass\'{e}}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \begin{document}
 
-\chapter{Conclus\~{a}o e trabalhos futuros}
+\input{Capitulos/Introducao}
 
-Este trabalho foi focado na teoria discreta de Morse de Forman. Analisamos os elementos b\'{a}sicos desta teoria, e provamos a estrutura em camadas das fun\c{c}\~{o}es de Morse discretas. Representamos esta estrutura de camadas por uma cole\c{c}\~{a}o de hiperflorestas e demos uma caracteriza\c{c}\~{a}o completa das c\'{e}lulas cr\'{i}ticas em termos de componentes regulares das hiperflorestas. Usamos esta an\'{a}lise para introduzir um esquema para construir fun\c{c}\~{o}es de Morse discretas em complexos celulares finitos de dimens\~{a}o arbitr\'{a}ria. Esta constru\c{c}\~{a}o \'{e} quadr\'{a}tica no tempo no pior caso, e foi provada que ela \'{e} linear e \'{o}tima no caso das variedades de dimens\~{a}o 2. Os resultados experimentais mostraram que o algoritmo deu um resultado \'{o}timo na maioria dos casos. Isto abriu uma nova pergunta: quais s\~{a}o as condi\c{c}\~{o}es sobre um complexo celular que asseguram que o algoritmo fornece uma fun\c{c}\~{a}o \'{o}tima.
+\input{Capitulos/EstadoDaArte}
 
-% \begin{figure}
-%   \includegraphics*[width=\linewidth]{ctor4_none.eps}
-%   \caption{Uma figura}
-% \end{figure}
+\input{Capitulos/PropostaEObjetivos}
 
-Uma aplica\c{c}\~{a}o importante deste trabalho em computa\c{c}\~{a}o gr\'{a}fica estaria no campo da compress\~{a}o geom\'{e}trica. O algoritmo Grow\&Fold de A. Szymczak e J. Rossignac \cite{Szy00} poderia ser justificado e melhorado por nosso algoritmo com o objetivo de minimizar o n\'{u}mero de ``glue faces'' a fim conseguir uma compress\~{a}o mais eficiente. Esta proposta foi feita de maneira \'{o}tima para o caso de compress\~{a}o de superf\'{i}cies com al\c{c}as em \cite{Lop02}.
-
-Planejamos continuar este trabalho em tr\^{e}s dire\c{c}\~{o}es. Primeiramente, como mencionado acima, aplicar a teoria de Forman e a an\'{a}lise de nosso algoritmo para a compress\~{a}o de malhas volum\'{e}tricas em $\Rset^{n}, n \geq 3$. Tentaremos tamb\'{e}m aplicar a teoria de Morse discreta para resolver as singularidades que aparecem nas reconstru\c{c}\~{o}es de modelos. Finalmente, esperamos produzir um morphing topologicamente consistente utilizando o campo gradiente discreto de dois objetos com o mesmo tipo de homotopia.
-
+\input{Capitulos/PlanoDeAcao}
 
 \arial
 \bibliography{Exemplo}
